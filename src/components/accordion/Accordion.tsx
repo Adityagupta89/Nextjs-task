@@ -11,6 +11,7 @@ const Accordion = () => {
     <div className="gap-2 mt-4">
       {[1, 2, 3, 4, 5].map((index) => (
         <div
+        key={index}
           onClick={() => {
             if (index === tabOpen) setTabOpen(0);
             else setTabOpen(index);

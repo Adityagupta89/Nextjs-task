@@ -25,8 +25,8 @@ const ContentCard = ({
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-8">
         {contentData.map((content: contentType) => (
-          <div>
-            {content.image1!='' &&
+          <div key={content.title}>
+            {content.image1 != "" && (
               <Image
                 alt="user-image"
                 src={content.image1}
@@ -34,7 +34,7 @@ const ContentCard = ({
                 height="500"
                 className=" mr-2 mb-10 mt-5"
               />
-            }
+            )}
             <h1 className="font-bold text-[1.2rem]  text-white  mb-3  mt-5">
               {content.title}
             </h1>
@@ -42,13 +42,15 @@ const ContentCard = ({
               {content.description}
             </p>
             <div className="mt-5">
-              {content.image2!='' && <Image
-                alt="server-icon"
-                src={content.image2}
-                width="20"
-                height="20"
-                className=" mr-2"
-              />}
+              {content.image2 != "" && (
+                <Image
+                  alt="server-icon"
+                  src={content.image2}
+                  width="20"
+                  height="20"
+                  className=" mr-2"
+                />
+              )}
             </div>
           </div>
         ))}
