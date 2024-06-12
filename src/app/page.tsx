@@ -9,7 +9,7 @@ export default function Index() {
   return (
     <main>
       <Home />
-      <div className="block md:hidden lg:block">
+      <div className="hidden sm:hidden  lg:block">
         <About />
       </div>
       <Banner />

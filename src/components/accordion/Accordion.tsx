@@ -26,7 +26,7 @@ const Accordion = () => {
               alt=""
             />
           )}
-          <div className="container m-auto max-w-[1050px]  flex flex-col  relative p-6">
+          <div className="container m-auto max-w-[1050px]  flex flex-col  relative px-[22px] py-[9px]">
             <div className="flex cursor-pointer justify-between w-full h-[40px]">
               <p className="text-white font-medium uppercase text-[1rem] lg:text-[1rem]">
                 LOREM IPSUM DOLOR SIT AMET
